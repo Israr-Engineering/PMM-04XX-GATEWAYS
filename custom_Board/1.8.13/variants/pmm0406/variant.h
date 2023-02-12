@@ -85,41 +85,29 @@ extern "C" unsigned int PINCOUNT_fn();
 #define PIN_LED3             PIN_LED_TXL
 #define LED_BUILTIN          PIN_LED_13
 
-/*
- * Digital pins for PMM0620
- */
+
+ 
 //01. Digital inputs on screw terminal 
-#define PMM_D_01          (1u) //PA06 : Digital Input 01
-#define PMM_D_02          (2u) //PA07 : Digital Input 02
-#define PMM_D_03          (3u) //PA08 : Digital Input 03
-#define PMM_D_04          (4u) //PA09: Digital Input 04
-#define PMM_AI_01          (21u) //PB08 : Digital Input 06
-#define PMM_AI_02          (22u) //PB09 : Digital Input 07
-#define PMM_AI_03          (23u)//PA04 : Digital Input 08
-#define PMM_AI_04          (0u) //PA05 : Digital Input 09
-
-//02. Dip switches 
-#define PMM_DI_PROG        (10u) //PB02 : Digital Input for programming mode - near termination dip switch
-//#define PMM_DI_PROG01      (42u) //PA03 : Digital Input - general (front panel dip switch )
-//#define PMM_DI_PROG02      (14u) //PA02 : Digital Input - general (front panel dip switch)
-//03. Internal signals
-//03a. Ethernet controller
-#define PMM_DO_ETH_RST     (16u) //PA18 : Digital output : Ethernet controller reset command
-#define PMM_D1_ETH_INT     (18u) //PA19 : Digital Input : Ethernet controller interrupt 
-#define PMM_DO_SCSn        (19u) //PA17 : Digital output : Ethernet controller chip select command  
-//03b. Flash memory
-#define PMM_DO_FLASH_EN     (13u) //PA14 : Digital output : Flash Enable command
-#define PMM_DO_FLASH_CS     (17u)//PA16 : Digital output : Flash chip select command 
-//03c. Serial RS485
-#define PMM_DO_RDENA        (29u)//PA27 : Digital output : RS485 Direction control  
-//03d. options 
-#define PMM_DI_INT        (10u)//PB02 : Digital Input : General interrupt from RTC or Extension boards  
-#define PMM_DI_LossOfPower        (7u)//PA13 : Digital Input :loos of power 
-#define PMM_SPEEDM        (11u)//PB03 : 
-#define PMM_SDCS       (14u)//PA15 :  
-
-
-
+#define PMM_12MHZIN              (18ul) //PA14
+#define PMM_12MHZOUT             (19ul) //PA15
+#define PMM_DIP9                 (12ul) //PA13 
+#define PMM_DIP7                 (25ul) //PA02
+#define PMM_AREF                 (46ul) //PA03 
+#define PMM_COM3_SCK             (24ul) //PA17   
+#define PMM_COM3_CS              (23ul) //PA19 
+#define PMM_SCSn_I               (13ul) //PA20 
+#define PMM_COM1_CS              (14ul) //PA21
+#define PMM_COM4_SCK             (2ul)  //PB08
+#define PMM_COM4_CS              (3ul)  //PB09 
+#define PMM_DIP8                 (4ul)  //PA04   
+#define PMM_ControlledPower      (5ul)  //PA05 
+#define PMM_COM2_SCK             (10ul) //PA06
+#define PMM_COM2_CS              (11ul) //PA07
+#define PMM_SD_CS                (31ul) //PA27 
+#define PMM_SWCLK                (48ul) //PA30   
+#define PMM_SWDIO                (49ul) //PA31 
+#define PMM_COM1_SCK             (15ul) //PB02
+#define PMM_DIP6                 (16ul) //PB03
 
 
 
